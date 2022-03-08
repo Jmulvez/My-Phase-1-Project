@@ -1,1 +1,1 @@
-# My-Phase-1-Project
+A simple app that allows the user to rate and comment on various dogs.

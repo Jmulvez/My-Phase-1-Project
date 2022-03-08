@@ -14,16 +14,28 @@
             <div class="doge">
                 <h1>The Benny Box</h1>
                 <img src="./images/IMG_2262.jpg"
-                width="500"
+                width="600"
                 height="700">
-                <button id="benny">Like</button>
+                <p class="name">About Me!</p>
+                <p class="description"></p>
+            <div class="benny">
                 <form id="Leave-A-Comment" class="field" method="POST">
                     <label for="New-Comment">Leave a Comment!</label>
                     <input type="text">
-                    <input type="submit" value="Create-new-comment">
+                    <input type="submit" value="Submit">
+                    <h3>
+                        <select name="Rating">
+                            <option value="Rate Me!" selected>Rate Me!</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </h3>
                 </form>
             </div>
-            <div id="comments">
+            <div class="comments">
                 <h2>My Comments</h2>
             </div>
         <script src="./javascript/index.js"></script>

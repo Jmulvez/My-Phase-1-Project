@@ -10,3 +10,9 @@
     text-align: center;
     border: blue;
 }
+
+.comments {
+    background-color: mintcream;
+    border-color: darkorange;
+    text-align: left;
+}
