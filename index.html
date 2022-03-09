@@ -21,8 +21,8 @@
             <div class="benny">
                 <form id="Leave-A-Comment" class="field" method="POST">
                     <label for="New-Comment">Leave a Comment!</label>
-                    <input type="text">
-                    <input type="submit" value="Submit">
+                    <input type="text" id="new-comment" placeholder="Tell me how I'm doing!">
+                    <input id="submit" type="submit" value="Submit Rating">
                     <h3>
                         <select name="Rating">
                             <option value="Rate Me!" selected>Rate Me!</option>
@@ -35,8 +35,9 @@
                     </h3>
                 </form>
             </div>
-            <div class="comments">
-                <h2>My Comments</h2>
+            <div id="list">
+                <h3>My Comments</h3>
+                <ul id="comments"></ul>
             </div>
         <script src="./javascript/index.js"></script>
         </body>
