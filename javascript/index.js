@@ -7,4 +7,9 @@ post.addEventListener("click", function(){
     document.getElementById("comments").appendChild(li);
 });
 
-alert
+const button = document.getElementById('likeButton'),
+    count = 0;
+    button.onClick = function() {
+        count += 1;
+        button.innerHTML = "Likes: " + count;
+    };

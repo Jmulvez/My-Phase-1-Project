@@ -1,8 +1,8 @@
 .banner {
-    background-color: chartreuse;
+    background-color: tan;
     margin-top: auto;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 2ch;
+    margin-right: 2ch;
     text-align: center;
 }
 
@@ -10,5 +10,14 @@
     background-color: lemonchiffon;
     border: blue;
     text-align: center;
+    margin-left: 5ch;
+    margin-right: 5ch;
+}
+
+.description {
+    border: 0ch;
+    border-color: blue;
+    margin-left: 5ch;
+    margin-right: 5ch;
 }
 

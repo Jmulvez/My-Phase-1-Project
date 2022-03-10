@@ -1,1 +1,1 @@
-A simple app that allows the user to rate and comment on various dogs.
+A simple blog that allows the user to comment on my dog Benjamin.
