@@ -1,18 +1,14 @@
 .banner {
-    color:chocolate;
     background-color: chartreuse;
     margin-top: auto;
+    margin-left: 0%;
+    margin-right: 0%;
     text-align: center;
 }
 
 .doge {
     background-color: lemonchiffon;
-    text-align: center;
     border: blue;
+    text-align: center;
 }
 
-.comments {
-    background-color: mintcream;
-    border-color: darkorange;
-    text-align: left;
-}

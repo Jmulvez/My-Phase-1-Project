@@ -9,36 +9,26 @@
         </head>
         <body>
             <div class="banner">
-                <img src="./images/banner-DOGE.jpg">
-            </div>
+                <img src="./images/banner-DOGE.jpg"
+                height="150"
+                width="800">
             <div class="doge">
-                <h1>The Benny Box</h1>
-                <img src="./images/IMG_2262.jpg"
+                <h1>The Benny Blog</h1>
+                <img class="benny-picture" src="./images/IMG_2262.jpg"
                 width="600"
                 height="700">
                 <p class="name">About Me!</p>
                 <p class="description"></p>
-            <div class="benny">
-                <form id="Leave-A-Comment" class="field" method="POST">
-                    <label for="New-Comment">Leave a Comment!</label>
-                    <input type="text" id="new-comment" placeholder="Tell me how I'm doing!">
-                    <input id="submit" type="submit" value="Submit Rating">
-                    <h3>
-                        <select name="Rating">
-                            <option value="Rate Me!" selected>Rate Me!</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </h3>
-                </form>
+            <div class="container">
+                <input type="text" id="comment-box" placeholder="Leave a comment!">
+                <button id="post">Post</button>
+                 <ul id="comments">
+                 </ul>
+                <div class="ending">
+                    
+                </div>
             </div>
-            <div id="list">
-                <h3>My Comments</h3>
-                <ul id="comments"></ul>
-            </div>
-        <script src="./javascript/index.js"></script>
+        </div>
+         <script src="./javascript/index.js"></script>
         </body>
     </html>
