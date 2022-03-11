@@ -19,7 +19,6 @@
     border-color: blue;
     margin-left: 5ch;
     margin-right: 5ch;
-    t
 }
 
 .likesAdd {
@@ -44,4 +43,19 @@
     background-color: burlywood;
     border-color: brown;
     box-shadow: 5px;
+}
+
+.blogTitle {
+    color: bisque;
+    background-color: brown;
+}
+
+.displayLikes {
+    size: 5ch;
+    color: brown;
+}
+
+.about-me {
+    color: brown;
+    background-color: tan;
 }
