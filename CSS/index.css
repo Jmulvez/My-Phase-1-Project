@@ -15,9 +15,33 @@
 }
 
 .description {
-    border: 0ch;
+    border: 2ch;
     border-color: blue;
     margin-left: 5ch;
     margin-right: 5ch;
+    t
 }
 
+.likesAdd {
+    width: 7ch;
+    height: 4ch;
+    background-color: brown;
+    color: bisque;
+}
+
+.likesAdd:hover {
+    background-color: burlywood;
+    border-color: brown;
+    box-shadow: 5px;
+}
+
+#post {
+    background-color: brown;
+    color: bisque;
+}
+
+#post:hover {
+    background-color: burlywood;
+    border-color: brown;
+    box-shadow: 5px;
+}

@@ -7,9 +7,19 @@ post.addEventListener("click", function(){
     document.getElementById("comments").appendChild(li);
 });
 
-const button = document.getElementById('likeButton'),
-    count = 0;
-    button.onClick = function() {
-        count += 1;
-        button.innerHTML = "Likes: " + count;
-    };
+const likesDisplay = document.querySelector('.displayLikes');
+
+const likesPlus = document.querySelector('.likesAdd');
+
+let likes = 0;
+
+updateDisplay();
+
+likesPlus.addEventListener("click",()=>{
+    likes++;
+    updateDisplay();
+}) ;
+
+function updateDisplay(){
+    likesDisplay.innerHTML = likes;
+};
