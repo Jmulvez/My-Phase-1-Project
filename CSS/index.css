@@ -58,4 +58,12 @@
 .about-me {
     color: brown;
     background-color: tan;
+    border: 5ch;
+    border-color: brown;
+    border-radius: 2ch;
+}
+
+.benny-picture {
+    border-radius: 5ch;
+    border-color: brown;
 }
