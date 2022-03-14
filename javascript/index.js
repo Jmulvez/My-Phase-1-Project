@@ -25,16 +25,11 @@ function updateDisplay(){
     likesDisplay.innerHTML = likes;
 };
 
-function handleFormSubmit(event) {
-    event.preventDefault();
-    
-    const data = new formData(event.target);
-    
-    const formJSON = object.fromEntries(data.entries());
+const form = document.querySelector('form')  
 
-    const results = document.getElementsByClassName('comments');
-  results.innerText = JSON.stringify(formJSON);
-}
-
-const form = document.getElementsByClassName('comment-section');
-form.addEventListener('submit', handleFormSubmit);
+form.addEventListener('submit', (e) => {  
+  e.preventDefault()  
+  const formData = new formData(e.target)  
+  const json = JSON.stringify(object.fromEntries(formData));  
+  console.log(json)  
+})
