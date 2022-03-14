@@ -1,3 +1,5 @@
+const e = require("express");
+
 const post= document.getElementById("post");
 
 post.addEventListener("click", function(){
@@ -25,11 +27,16 @@ function updateDisplay(){
     likesDisplay.innerHTML = likes;
 };
 
-const form = document.querySelector('form')  
 
-form.addEventListener('submit', (e) => {  
-  e.preventDefault()  
-  const formData = new formData(e.target)  
-  const json = JSON.stringify(object.fromEntries(formData));  
-  console.log(json)  
-})
+document.querySelector('comment-section').addEventListener('submit', handleSubmit)
+
+function handleSubmit(e)
+e.preventDefault()
+let commentObject = {
+    comment:e.target.comment.value
+}
+renderOneComment(commentObject)
+
+function renderOneComment(comment) {
+
+}

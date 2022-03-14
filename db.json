@@ -1,3 +1,8 @@
 {
-    "comment": [""]
+    "comments": [
+        {
+            "id": 1,
+            "comment": "good boy!"
+        }
+    ]
 }
