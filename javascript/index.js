@@ -32,9 +32,9 @@ function handleFormSubmit(event) {
     
     const formJSON = object.fromEntries(data.entries());
 
-    const results = document.querySelector('.results pre');
-  results.innerText = JSON.stringify(formJSON, null, 2);
+    const results = document.getElementsByClassName('comments');
+  results.innerText = JSON.stringify(formJSON);
 }
 
-const form = document.querySelector('.contact-form');
+const form = document.getElementsByClassName('comment-section');
 form.addEventListener('submit', handleFormSubmit);
