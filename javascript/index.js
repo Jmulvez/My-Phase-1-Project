@@ -1,15 +1,3 @@
-const e = require("express");
-
-const post= document.getElementById("post");
-
-post.addEventListener("click", function(){
-    const commentBoxValue= document.getElementById("comment-box").value;
-    const li = document.createElement("li");
-    const text = document.createTextNode(commentBoxValue);
-    li.appendChild(text);
-    document.getElementById("comments").appendChild(li);
-});
-
 const likesDisplay = document.querySelector('.displayLikes');
 
 const likesPlus = document.querySelector('.likesAdd');
@@ -27,16 +15,19 @@ function updateDisplay(){
     likesDisplay.innerHTML = likes;
 };
 
-
-document.querySelector('comment-section').addEventListener('submit', handleSubmit)
-
-function handleSubmit(e)
-e.preventDefault()
-let commentObject = {
-    comment:e.target.comment.value
-}
-renderOneComment(commentObject)
-
 function renderOneComment(comment) {
+    let card = document.createElement('li')
+    card.className = 'card'
+    card.innerHTML = ''
+
+document.querySelector('#comment-section').appendChild(card)
+}
+
+function getAllComments() {
+    fetch('http://localhost3000/comments')
+}
+
+function initialize() {
 
 }
+initialize()
