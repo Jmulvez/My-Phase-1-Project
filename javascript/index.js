@@ -15,15 +15,19 @@ function updateDisplay(){
     likesDisplay.innerHTML = likes;
 };
 
-console.log(allComments)
+const main = document.querySelector("#container")
+console.log(main)
 
+const commentForm = document.querySelector("#comment-section")
 
-function renderOneComment(comment) {
-    console.log(comment)
-    document.querySelector('form')
-}
+const commentList = document.querySelector("#comments")
 
-function initialize() {
-    renderOneComment(allComments)
-}
-initialize()
+commentForm.addEventListener("submit", function(e) {
+    e.preventDefault()
+    const newComment = document.querySelector("#comment-box").value
+
+    commentList.innerHTML += `
+    <li> ${newComment}
+    </li>`
+})
+
