@@ -1,5 +1,8 @@
-const allComments = [
+{
+  "comments": [
     {
-        "comment":"good boy!"
+      "id": 1,
+      "comment": "first comment"
     }
-]
+  ]
+}

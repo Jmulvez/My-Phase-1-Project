@@ -15,19 +15,36 @@ function updateDisplay(){
     likesDisplay.innerHTML = likes;
 };
 
-const main = document.querySelector("#container")
-console.log(main)
+document.querySelector('#comment-section').addEventListener('submit', handleSubmit)
 
-const commentForm = document.querySelector("#comment-section")
+function handleSubmit(e) {
+e.preventDefault()
 
-const commentList = document.querySelector("#comments")
+let commentText = {
+    comment:e.target.commentBox.value
+}
 
-commentForm.addEventListener("submit", function(e) {
-    e.preventDefault()
-    const newComment = document.querySelector("#comment-box").value
+fetch('http://localhost:3000/comments')
 
-    commentList.innerHTML += `
-    <li> ${newComment}
-    </li>`
-})
+renderOneComment(commentText)
+}
 
+function renderOneComment(comment) {
+    let card = document.createElement('li')
+    card.innerText = comment.comment
+    document.querySelector('#comments').appendChild(card)
+}
+
+function getAllComments() {
+    fetch('http://localhost:3000/comments')
+    .then(res => res.json())
+    .then(commentText => commentText.forEach(comment => renderOneComment(comment)))
+}
+
+function initialize() {
+    getAllComments()
+}
+
+initialize()
+
+document.addEventListener('DOMContentLoaded', (event) => )
