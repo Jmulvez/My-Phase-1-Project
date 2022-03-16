@@ -24,8 +24,6 @@ let commentText = {
     comment:e.target.commentBox.value
 }
 
-fetch('http://localhost:3000/comments')
-
 renderOneComment(commentText)
 }
 
@@ -47,4 +45,10 @@ function initialize() {
 
 initialize()
 
-document.addEventListener('DOMContentLoaded', (event) => )
+
+const button = document.getElementById("post"); 
+
+function alertButton() {
+    alert('Bark! Thank you!');
+}
+    button.addEventListener("click", alertButton);
