@@ -53,7 +53,7 @@
 .displayLikes {
     size: 5ch;
     color: brown;
-    text-decoration: dashed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .about-me {
@@ -73,6 +73,7 @@
     color: brown;
     background-color:tan;
     border-radius: 5ch;
+    text-decoration: underline;
 }
 
 .ending {
@@ -86,4 +87,11 @@
     text-align: left;
     text-shadow: 2ch;
     text-emphasis: bold;
+    text-decoration: double;
+}
+
+#entirePage {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: brown;
 }
