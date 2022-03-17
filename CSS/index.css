@@ -53,6 +53,7 @@
 .displayLikes {
     size: 5ch;
     color: brown;
+    text-decoration: dashed;
 }
 
 .about-me {
@@ -77,4 +78,12 @@
 .ending {
     color: tan;
     background-color: brown;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#comments {
+    text-align: left;
+    text-shadow: 2ch;
+    text-emphasis: bold;
 }

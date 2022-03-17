@@ -6,12 +6,12 @@ let likes = 0;
 
 updateDisplay();
 
-likesPlus.addEventListener("click",()=>{
+likesPlus.addEventListener("click", () => {
     likes++;
     updateDisplay();
 }) ;
 
-function updateDisplay(){
+function updateDisplay() {
     likesDisplay.innerHTML = likes;
 };
 
@@ -49,6 +49,6 @@ initialize()
 const button = document.getElementById("post"); 
 
 function alertButton() {
-    alert('Bark! Thank you!');
+    alert('Bark Bark! Thank you!');
 }
     button.addEventListener("click", alertButton);
