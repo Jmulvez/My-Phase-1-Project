@@ -32,6 +32,7 @@
     background-color: burlywood;
     border-color: brown;
     box-shadow: 5px;
+    cursor: cell;
 }
 
 #post {
@@ -92,6 +93,6 @@
 
 #entirePage {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
+    cursor: auto;
     background-color: brown;
 }
