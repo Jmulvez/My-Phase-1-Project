@@ -71,4 +71,10 @@
 #oldComments {
     color: brown;
     background-color:tan;
+    border-radius: 5ch;
+}
+
+.ending {
+    color: tan;
+    background-color: brown;
 }
