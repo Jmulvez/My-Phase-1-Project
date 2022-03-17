@@ -1,1 +1,1 @@
-A simple blog that allows the user to comment on my dog Benjamin.
+A simple blog application that allows the user to like and comment on my dog Benjamin.
