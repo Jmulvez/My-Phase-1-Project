@@ -4,8 +4,6 @@ const likesPlus = document.querySelector('.likesAdd');
 
 let likes = 0;
 
-updateDisplay();
-
 likesPlus.addEventListener("click", () => {
     likes++;
     updateDisplay();
@@ -18,25 +16,29 @@ function updateDisplay() {
 document.querySelector('#comment-section').addEventListener('submit', handleSubmit)
 
 function handleSubmit(e) {
-e.preventDefault()
+    e.preventDefault()
 
-let commentText = {
-    comment:e.target.commentBox.value
+    let commentText = {
+        comment:e.target.commentBox.value
+    }
+
+    renderOneComment(commentText)
 }
 
-renderOneComment(commentText)
-}
-
-function renderOneComment(comment) {
+function renderOneComment({comment}) {
     let card = document.createElement('li')
-    card.innerText = comment.comment
+    card.innerText = comment
     document.querySelector('#comments').appendChild(card)
 }
 
 function getAllComments() {
     fetch('http://localhost:3000/comments')
     .then(res => res.json())
-    .then(commentText => commentText.forEach(comment => renderOneComment(comment)))
+    .then(commentText => {
+        console.log("a")
+        commentText.forEach(comment => renderOneComment(comment))
+    })
+    console.log("b")
 }
 
 function initialize() {
