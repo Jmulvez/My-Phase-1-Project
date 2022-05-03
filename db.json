@@ -1,20 +1,7 @@
 {
-  "comments": [
-    {
-      "id": 1,
-      "comment": "Good boy!"
-    },
-    {
-      "id": 2,
-      "comment": "Such a good dog!"
-    },
-    {
-      "id": 3,
-      "comment": "What kind of dog is he?"
-    },
-    {
-      "id": 4,
-      "comment": "I wanna meet him!"
-    }
-  ]
+  "comments": [],
+  "likes": {
+    "id": 1,
+    "likesCount": 4
+  }
 }
