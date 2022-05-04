@@ -1,7 +1,12 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "Good boy!"
+    }
+  ],
   "likes": {
     "id": 1,
-    "likesCount": 4
+    "likesCount": 6
   }
 }

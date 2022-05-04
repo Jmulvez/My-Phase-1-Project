@@ -24,7 +24,6 @@ likesPlus.addEventListener("click", () => {
     })
 });
 
-
 function updateDisplay() {
     likesDisplay.innerHTML = likes;
 };
@@ -37,6 +36,7 @@ function handleSubmit(e) {
         comment:e.target.commentBox.value
     }
     renderOneComment(commentText)
+    commentBox.value = '';
 }
 
 function renderOneComment({id, comment}) {
@@ -57,7 +57,6 @@ function getAllComments() {
     fetch('http://localhost:3000/comments')
     .then(res => res.json())
     .then(commentText => {
-        console.log(commentText)
         commentText.forEach(comment => renderOneComment(comment))
     }) 
     .catch(err => console.log(err))
@@ -86,9 +85,3 @@ function alertButton() {
     alert('Bark Bark! Thank you!');
 }
     button.addEventListener("click", alertButton);
-
-const newButton = document.querySelector('#newButton')
-newButton.addEventListener('click', () => {
-  const li = document.createElement('li')
-  newButton.appendChild(li)
-})
